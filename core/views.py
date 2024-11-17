@@ -1,7 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import redirect
 from .models import Cliente, Produto, Venda
 from .forms import ClienteForm, ProdutoForm, VendaForm
-from django.shortcuts import render
 
 
 def cliente_list(request):
@@ -44,3 +43,6 @@ def produto_form(request, id=None):
     else:
         form = ProdutoForm(instance=produto)
     return render(request, 'produto_form.html', {'form': form})
+
+
+from django.shortcuts import render
