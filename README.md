@@ -37,9 +37,20 @@ python manage.py runserver
 
 Acesse o projeto no navegador em http://127.0.0.1:8000/
 
+## Equipe:
 
+1. [Alef Monteiro](https://github.com/alef-monteiro);
+2. [Alexsandro Moraes](https://github.com/lexmoraes);
+3. [Antônio Santos](https://github.com/antonio-pss);
+4. [Ithauana Silva](https://github.com/Ithauana);
 
+## Atribuições:
 
+- Código ORD-001 (ALEX) - Adicione o nome da equipe no README.md, definindo o papel de
+cada membro e implementar backend de funcionário (models, views, forms, urls).
 
+- Código ORD-002 (ALEF) - Completar a implementação do backend de cadastro de produto (views, forms, urls).
 
+- Código ORD-003 (ANTÔNIO) - Implementar a página de vendas (views, forms, urls, templates HTML).
 
+- Código ORD-002 (ITHAUANA) - Implementar template de cadastro de funcionário e produto (templates HTML).
