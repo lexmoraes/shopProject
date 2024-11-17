@@ -2,6 +2,6 @@
 <a href="{% url 'produto_create' %}">Novo Produto</a>
 <ul>
     {% for produto in produtos %}
-        <li>{{ produto.nome }} - <a href="{% url 'produto_update' produto.id %}">Editar</a></li>
+        <li>Nome: {{ produto.nome }} - Quant: {{ produto.quantidade_estoque }}<a href="{% url 'produto_update' produto.id %}"> Editar</a></li>
     {% endfor %}
 </ul>
