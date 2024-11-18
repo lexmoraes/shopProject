@@ -11,6 +11,13 @@ class Cliente(models.Model):
         return self.nome
 
 
+class Vendedor(models.Model):
+    nome = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.nome
+
+
 class Produto(models.Model):
     nome = models.CharField(max_length=100)
     descricao = models.TextField()
@@ -39,4 +46,4 @@ class Venda(models.Model):
     data_venda = models.DateField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.cliente} - {self.produto}'
+        return f'{self.cliente} - {self.produto} - {self.funcionario}'

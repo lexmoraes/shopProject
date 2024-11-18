@@ -1,5 +1,7 @@
 from django import forms
+
 from .models import Cliente, Produto, Venda, Funcionario
+
 
 class ClienteForm(forms.ModelForm):
     class Meta:
