@@ -1,9 +1,14 @@
 from django import forms
-from .models import Cliente, Produto, Venda
+from .models import Cliente, Produto, Venda, Funcionario
 
 class ClienteForm(forms.ModelForm):
     class Meta:
         model = Cliente
+        fields = '__all__'
+
+class FuncionarioForm(forms.ModelForm):
+    class Meta:
+        model = Funcionario
         fields = '__all__'
 
 class ProdutoForm(forms.ModelForm):

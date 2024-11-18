@@ -17,6 +17,22 @@ def cliente_form(request, id=None):
         form = ClienteForm(instance=cliente)
     return render(request, 'cliente_form.html', {'form': form})
 
+
+def funcionario_list(request):
+    funcionario = Funcionario.objects.all()
+    return render(request, 'funcionarios.html', {'funcionarios': funcionarios})
+
+def funcionario_form(request, id=None):
+    funcionario = Funcionario.objects.get(id=id) if id else None
+    if request.method == 'POST':
+        form = FuncionarioForm(request.POST, instance=funcionario)
+        if form.is_valid():
+            form.save()
+            return redirect('funcionario_list')
+    else:
+        form = FuncionarioForm(instance=cliente)
+    return render(request, 'funcionario_form.html', {'form': form})
+
 # Similar para Produto e Venda
 # Funções `produto_list`, `produto_form`, `venda_list`, `venda_form`
 from django.shortcuts import render
