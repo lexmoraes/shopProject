@@ -1,0 +1,7 @@
+<h1>Vendas</h1>
+<a href="{% url 'venda_create' %}">Nova Venda</a>
+<ul>
+    {% for venda in vendas %}
+        <li>{{ venda.produto }} - <a href="{% url 'venda_update' venda.id %}">Editar</a></li>
+    {% endfor %}
+</ul>
