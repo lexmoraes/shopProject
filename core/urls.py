@@ -6,4 +6,7 @@ urlpatterns = [
     path('clientes/novo/', views.cliente_form, name='cliente_create'),
     path('clientes/<int:id>/', views.cliente_form, name='cliente_update'),
     # Similar paths for `produtos` and `vendas`
+    path('vendas/', views.venda_list, name='venda_list'),
+    path('vendas/novo/', views.venda_form, name='venda_create'),
+    path('vendas/<int:id>/', views.venda_form, name='venda_update'),
 ]
