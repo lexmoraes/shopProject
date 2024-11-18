@@ -1,0 +1,7 @@
+<h1>Vendedores</h1>
+<a href="{% url 'vendedor_create' %}">Novo Vendedor</a>
+<ul>
+    {% for vendedor in vendedores %}
+        <li>{{ vendedor.nome }} - <a href="{% url 'vendedor_update' vendedor.id %}">Editar</a></li>
+    {% endfor %}
+</ul>
