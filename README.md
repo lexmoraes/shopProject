@@ -46,7 +46,7 @@ Acesse o projeto no navegador em http://127.0.0.1:8000/
 
 ## Atribuições:
 
-- Código ORD-001 (ALEX) - Adicione o nome da equipe no README.md, definindo o papel de
+- Código ORD-001 (ALEX) - Adicionar o nome da equipe no README.md, definindo o papel de
 cada membro e implementar backend de funcionário (models, views, forms, urls).
 
 - Código ORD-002 (ALEF) - Completar a implementação do backend de cadastro de produto (views, forms, urls).
